@@ -405,7 +405,7 @@ def run_benchmark(
     t1 = time.perf_counter_ns()
     replay_ms = (t1 - t0) / 1e6
     match_rate = replay_result.token_match_rate if hasattr(replay_result, 'token_match_rate') else 0.0
-    mismatches = replay_result.mismatches if hasattr(replay_result, 'mismatches') else []
+    mismatches = replay_result.mismatched_positions if hasattr(replay_result, 'mismatched_positions') else []
     logger.info(f"  Replay: match_rate={match_rate:.0%}, time={replay_ms:.3f}ms")
 
     return {

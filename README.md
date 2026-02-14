@@ -40,24 +40,40 @@ For LLaDA model experiments:
 ## Quick Start
 
 ```python
+import numpy as np
 from difftrace.engine import DiffTraceEngine
+from difftrace.core.trajectory import TrajectoryCapture
 from difftrace.utils.config import DiffTraceConfig, CaptureGranularity
 
-# Initialize
+# Initialize engine
 config = DiffTraceConfig()
 config.capture.granularity = CaptureGranularity.TOKENS_AND_MASKS
 engine = DiffTraceEngine(config)
 
-# Start capture for a request
-engine.begin_request("my_request_id", prompt_tokens, model_name="LLaDA-8B")
+# Create a capture session
+capture = TrajectoryCapture(config.capture)
+trajectory = capture.begin_trajectory(
+    request_id="my_request_id",
+    prompt_tokens=np.array(prompt_token_ids, dtype=np.int32),
+    model_name="LLaDA-8B",
+    num_diffusion_steps=128,
+    sequence_length=256,
+    device="cuda:0",
+)
 
 # In your denoising loop, after each step:
-engine.capture_step(step_index, unmasked_positions, sampled_tokens, mask_state=mask)
+capture.capture_step(
+    step_index=step_idx,
+    unmasked_positions=positions_tensor,  # torch.Tensor
+    sampled_tokens=tokens_tensor,         # torch.Tensor
+    mask_state=mask_tensor,               # torch.Tensor (optional)
+)
 
-# End capture
-engine.end_request("my_request_id", generated_tokens)
+# Finalize and store
+trajectory = capture.end_trajectory(generated_tokens=output_tensor)
+engine.store_trajectory(trajectory)
 
-# Replay
+# Replay (no model needed -- instant token reconstruction)
 result = engine.replay("my_request_id")
 assert result.exact_match  # 100% match guaranteed
 ```
