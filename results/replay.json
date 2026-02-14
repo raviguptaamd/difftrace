@@ -1,0 +1,233 @@
+{
+  "experiment": "replay",
+  "replay_results": [
+    {
+      "seq_length": 128,
+      "num_steps": 16,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.09484100000000001,
+      "std_replay_time_ms": 0.015832623708659285,
+      "avg_speedup": 4.165279496453225
+    },
+    {
+      "seq_length": 128,
+      "num_steps": 32,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.12961689999999998,
+      "std_replay_time_ms": 0.0028227023027588274,
+      "avg_speedup": 4.965923475094362
+    },
+    {
+      "seq_length": 128,
+      "num_steps": 64,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.20659535,
+      "std_replay_time_ms": 0.002671995794813307,
+      "avg_speedup": 5.750737869607018
+    },
+    {
+      "seq_length": 128,
+      "num_steps": 128,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.28166155000000004,
+      "std_replay_time_ms": 0.002554729818884963,
+      "avg_speedup": 6.015715730129623
+    },
+    {
+      "seq_length": 256,
+      "num_steps": 16,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.11621455,
+      "std_replay_time_ms": 0.0026774575715592572,
+      "avg_speedup": 3.3867952658287637
+    },
+    {
+      "seq_length": 256,
+      "num_steps": 32,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.1573408,
+      "std_replay_time_ms": 0.0028922384514420653,
+      "avg_speedup": 4.350025856148959
+    },
+    {
+      "seq_length": 256,
+      "num_steps": 64,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.24084865000000005,
+      "std_replay_time_ms": 0.003206688093266945,
+      "avg_speedup": 5.321703099869227
+    },
+    {
+      "seq_length": 256,
+      "num_steps": 128,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.39673379999999997,
+      "std_replay_time_ms": 0.0032605939888308635,
+      "avg_speedup": 6.244968165658838
+    },
+    {
+      "seq_length": 512,
+      "num_steps": 16,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.26418070000000005,
+      "std_replay_time_ms": 0.004241525823332917,
+      "avg_speedup": 1.6786897259139728
+    },
+    {
+      "seq_length": 512,
+      "num_steps": 32,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.22201445,
+      "std_replay_time_ms": 0.002568600776200922,
+      "avg_speedup": 3.4806104964143465
+    },
+    {
+      "seq_length": 512,
+      "num_steps": 64,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.30626755,
+      "std_replay_time_ms": 0.0036015157708248315,
+      "avg_speedup": 4.665697777457709
+    },
+    {
+      "seq_length": 512,
+      "num_steps": 128,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.4676538499999999,
+      "std_replay_time_ms": 0.0028040210818572665,
+      "avg_speedup": 5.871068872881668
+    },
+    {
+      "seq_length": 1024,
+      "num_steps": 16,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.40040525000000005,
+      "std_replay_time_ms": 0.0033159018663856702,
+      "avg_speedup": 1.3266364651700564
+    },
+    {
+      "seq_length": 1024,
+      "num_steps": 32,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.50968295,
+      "std_replay_time_ms": 0.002493581289531187,
+      "avg_speedup": 1.8318687993307514
+    },
+    {
+      "seq_length": 1024,
+      "num_steps": 64,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.57597535,
+      "std_replay_time_ms": 0.005984693712087526,
+      "avg_speedup": 3.013491758731346
+    },
+    {
+      "seq_length": 1024,
+      "num_steps": 128,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.5913582000000001,
+      "std_replay_time_ms": 0.004196610508493728,
+      "avg_speedup": 5.594647272938467
+    },
+    {
+      "seq_length": 2048,
+      "num_steps": 16,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.6287222499999999,
+      "std_replay_time_ms": 0.006349787861613966,
+      "avg_speedup": 1.0808446661574436
+    },
+    {
+      "seq_length": 2048,
+      "num_steps": 32,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 0.77791675,
+      "std_replay_time_ms": 0.004850293154800032,
+      "avg_speedup": 1.5677030793281233
+    },
+    {
+      "seq_length": 2048,
+      "num_steps": 64,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 1.0086540999999998,
+      "std_replay_time_ms": 0.012053745998236406,
+      "avg_speedup": 2.268593575041222
+    },
+    {
+      "seq_length": 2048,
+      "num_steps": 128,
+      "num_trials": 20,
+      "exact_match_rate": 1.0,
+      "avg_token_match_rate": 1.0,
+      "min_token_match_rate": 1.0,
+      "avg_replay_time_ms": 1.2613317000000002,
+      "std_replay_time_ms": 0.006454446189255912,
+      "avg_speedup": 3.476599615482649
+    }
+  ],
+  "divergence_analysis": {
+    "num_trials": 50,
+    "divergence_rate": 1.0,
+    "avg_first_divergence_step": 0.0,
+    "std_first_divergence_step": 0.0,
+    "min_first_divergence_step": 0,
+    "max_first_divergence_step": 0
+  }
+}

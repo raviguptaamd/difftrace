@@ -1,0 +1,177 @@
+% ============================================================
+% DiffTrace: Provenance-Aware Reproducible Inference for Stochastic dLLMs
+% Bibliography
+% ============================================================
+
+% === Diffusion Language Models ===
+
+@inproceedings{sahoo2024mdlm,
+  title={Simple and Effective Masked Diffusion Language Models},
+  author={Sahoo, Subham Sekhar and Arriola, Marianne and Schiff, Yair and Gokaslan, Aaron and Marroquin, Edgar and Chiu, Justin T and Rush, Alexander and Kuleshov, Volodymyr},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2024}
+}
+
+@article{nie2025llada,
+  title={Large Language Diffusion Models},
+  author={Nie, Shen and Zhu, Fengqi and You, Chao and Zhang, Xiaojian and Ou, Jiangtao and Hu, Jun and Zhou, Jun and Lin, Yankai and Wen, Ji-Rong and Li, Zhenguo},
+  journal={arXiv preprint arXiv:2502.09992},
+  year={2025}
+}
+
+@article{nie2025llada2,
+  title={LLaDA2.0: Scaling Up Diffusion Language Models to 100B},
+  author={Nie, Shen and others},
+  journal={arXiv preprint arXiv:2512.15745},
+  year={2025}
+}
+
+@inproceedings{lou2024sedd,
+  title={Discrete Diffusion Modeling by Estimating the Ratios of the Data Distribution},
+  author={Lou, Aaron and Meng, Chenlin and Ermon, Stefano},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2024}
+}
+
+@article{chen2024dinfer,
+  title={dInfer: An Efficient Inference Framework for Diffusion Language Models},
+  author={Chen, Juntao and others},
+  journal={arXiv preprint arXiv:2510.08666},
+  year={2025}
+}
+
+@article{chen2024fastdllm,
+  title={Fast-dLLM: Training-Free Fast Diffusion Large Language Model Inference},
+  author={Chen, others},
+  journal={NeurIPS},
+  year={2025}
+}
+
+% === Checkpointing and Provenance ===
+
+@inproceedings{nicolae2020veloc,
+  title={{VeloC}: Very Low Overhead Checkpointing System},
+  author={Nicolae, Bogdan and Li, Adam and Chen, Jian and Zheng, Sheng and Moody, Adam and Cappello, Franck},
+  booktitle={IEEE/ACM International Conference on High Performance Computing, Networking, Storage and Analysis (SC)},
+  year={2020}
+}
+
+@inproceedings{maurya2024datastates,
+  title={{DataStates-LLM}: Lazy Asynchronous Checkpointing for Large Language Models},
+  author={Maurya, Avinash and Robert, Underwood and Cappello, Franck and Nicolae, Bogdan},
+  booktitle={IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  year={2024}
+}
+
+@article{grubic2024olmotrace,
+  title={{OLMoTrace}: Tracing Language Model Outputs Back to Trillions of Training Tokens},
+  author={Grubic, others},
+  journal={arXiv preprint arXiv:2504.07096},
+  year={2025}
+}
+
+@article{xu2025modelprovenance,
+  title={Model Provenance Testing for Large Language Models},
+  author={Xu, others},
+  journal={arXiv preprint arXiv:2502.00706},
+  year={2025}
+}
+
+% === Data Reduction and Compression ===
+
+@phdthesis{underwood2021compression,
+  title={Approachable Error Bounded Lossy Compression},
+  author={Underwood, Robert Raymond},
+  school={Clemson University},
+  year={2021}
+}
+
+@inproceedings{underwood2022libpressio,
+  title={Productive and Performant Generic Lossy Data Compression with {LibPressio}},
+  author={Underwood, Robert and Malvoso, Victoriana and Calhoun, Jon C and Di, Sheng and Cappello, Franck},
+  booktitle={IEEE International Workshop on Accelerating Analytics and Computing (ACCEL)},
+  year={2022}
+}
+
+@inproceedings{di2016sz,
+  title={Fast Error-Bounded Lossy {HPC} Data Compression with {SZ}},
+  author={Di, Sheng and Cappello, Franck},
+  booktitle={IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  year={2016}
+}
+
+% === LLM Inference Systems ===
+
+@inproceedings{kwon2023vllm,
+  title={Efficient Memory Management for Large Language Model Serving with {PagedAttention}},
+  author={Kwon, Woosuk and Li, Zhuohan and Zhuang, Siyuan and Sheng, Ying and Zheng, Lianmin and Yu, Cody Hao and Gonzalez, Joseph E and Zhang, Hao and Stoica, Ion},
+  booktitle={Proceedings of the ACM SIGOPS 29th Symposium on Operating Systems Principles (SOSP)},
+  year={2023}
+}
+
+@article{touvron2023llama,
+  title={{LLaMA}: Open and Efficient Foundation Language Models},
+  author={Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and others},
+  journal={arXiv preprint arXiv:2302.13971},
+  year={2023}
+}
+
+% === Diffusion Models (General) ===
+
+@inproceedings{ho2020ddpm,
+  title={Denoising Diffusion Probabilistic Models},
+  author={Ho, Jonathan and Jain, Ajay and Abbeel, Pieter},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2020}
+}
+
+@inproceedings{austin2021d3pm,
+  title={Structured Denoising Diffusion Models in Discrete State-Spaces},
+  author={Austin, Jacob and Johnson, Daniel D and Ho, Jonathan and Tarlow, Daniel and van den Berg, Rianne},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2021}
+}
+
+% === Reproducibility in HPC ===
+
+@article{heroux2024reproducibility,
+  title={Toward a New Metric for Ranking {HPC} Systems: Reproducibility},
+  author={Heroux, Michael A and others},
+  journal={Computing in Science \& Engineering},
+  year={2024}
+}
+
+@article{cappello2014resilience,
+  title={Toward Exascale Resilience: 2014 Update},
+  author={Cappello, Franck and Geist, Al and Gropp, Bill and Kale, Sanjay and Kramer, Bill and Snir, Marc},
+  journal={Supercomputing Frontiers and Innovations},
+  volume={1},
+  number={1},
+  pages={5--28},
+  year={2014}
+}
+
+% === AMD MI300X / ROCm ===
+
+@misc{amd2024mi300x,
+  title={{AMD Instinct MI300X} Accelerator},
+  author={{AMD}},
+  year={2024},
+  howpublished={\url{https://www.amd.com/en/products/accelerators/instinct/mi300/mi300x.html}}
+}
+
+% === Distributed Inference ===
+
+@inproceedings{shoeybi2019megatron,
+  title={{Megatron-LM}: Training Multi-Billion Parameter Language Models Using Model Parallelism},
+  author={Shoeybi, Mohammad and Patwary, Mostofa and Puri, Raul and LeGresley, Patrick and Casper, Jared and Catanzaro, Bryan},
+  booktitle={arXiv preprint arXiv:1909.08053},
+  year={2019}
+}
+
+@inproceedings{rasley2020deepspeed,
+  title={{DeepSpeed}: System Optimizations Enable Training Deep Learning Models with Over 100 Billion Parameters},
+  author={Rasley, Jeff and Rajbhandari, Samyam and Ruwase, Olatunji and He, Yuxiong},
+  booktitle={ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  year={2020}
+}

@@ -1,0 +1,38 @@
+# DiffTrace: Cluster-specific Dockerfile
+# For AMD internal cluster (useocpslog-002) with MI300X nodes
+# Uses pre-loaded PyTorch ROCm images
+#
+# Build on compute node:
+#   srun --partition=amd-rccl -N1 --time=00:30:00 \
+#     docker build -t difftrace:cluster -f docker/Dockerfile.cluster .
+
+FROM rocm/pytorch-private:torchforge-deps-rocm7.1-20260205-v1
+
+# Fix apt sources to use https
+RUN sed -i 's/http/https/g' /etc/apt/sources.list
+
+# System dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    wget \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /workspace
+
+# Install Python dependencies
+COPY requirements.txt /workspace/requirements.txt
+RUN pip install --no-cache-dir zstandard transformers accelerate \
+    matplotlib pandas seaborn tabulate
+
+# Install LLaDA
+RUN pip install --no-cache-dir git+https://github.com/ML-GSAI/LLaDA.git 2>/dev/null || \
+    echo "LLaDA install from git failed, will use local hooks"
+
+# Install DiffTrace
+COPY . /workspace/difftrace
+RUN cd /workspace/difftrace && pip install -e .
+
+ENV PYTORCH_ROCM_ARCH="gfx942"
+ENV OMP_NUM_THREADS=16
+
+ENTRYPOINT ["/bin/bash"]
