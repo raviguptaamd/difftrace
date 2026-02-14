@@ -1,5 +1,5 @@
 # DiffTrace: Cluster-specific Dockerfile
-# For AMD internal cluster (useocpslog-002) with MI300X nodes
+# For AMD MI300X cluster nodes with pre-loaded ROCm images
 # Uses pre-loaded PyTorch ROCm images
 #
 # Build on compute node:

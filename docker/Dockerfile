@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     numactl \
     && rm -rf /var/lib/apt/lists/*
 
-# NOTE: For AMD internal cluster (useocpslog-002), use the cluster-specific
+# NOTE: For clusters with pre-loaded ROCm images, use the cluster-specific
 # Dockerfile.cluster which builds on top of pre-loaded images.
 
 # Set working directory

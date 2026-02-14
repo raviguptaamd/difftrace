@@ -1,11 +1,10 @@
 #!/bin/bash
 # =============================================================================
 # DiffTrace: Full experiment pipeline for AMD MI300X cluster
-# (useocpslog-002.amd.com)
 #
 # Usage:
 #   1. Copy difftrace/ directory to cluster:
-#      rsync -avz difftrace/ ravgupta@useocpslog-002.amd.com:~/difftrace/
+#      rsync -avz difftrace/ <user>@<cluster-hostname>:~/difftrace/
 #
 #   2. SSH to cluster and run:
 #      cd ~/difftrace && bash experiments/slurm/run_cluster.sh
